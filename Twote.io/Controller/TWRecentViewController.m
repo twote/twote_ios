@@ -9,6 +9,7 @@
 #import "TWRecentViewController.h"
 
 #import "TWTwoteViewController.h"
+#import "TWActivityIndicator.h"
 
 @interface TWTwoteCell ()
 
@@ -41,15 +42,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Retrieve recent Twotes
-    [[TWDataController sharedInstance] recentTwotesWithCompletion:^(BOOL success, NSArray *twotes) {
-        if(success)
-        {
-            _aTwotes = [[NSArray alloc] initWithArray:twotes];
-            [self.tableView reloadData];
-        }
-    }];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -64,6 +56,34 @@
     [titleLabel setTextColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]];
     [titleLabel setText:@"Twote.io"];
     [self.navigationItem setTitleView:titleLabel];
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // Retrieve recent Twotes
+    TWActivityIndicator *activityIndicator = [[TWActivityIndicator alloc] initWithFrame:CGRectMake(0,
+                                                                                                   0,
+                                                                                                   50,
+                                                                                                   50)];
+    [activityIndicator setCenter:CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2)];
+    [self.view addSubview:activityIndicator];
+    [activityIndicator startAnimating];
+    
+    [[TWDataController sharedInstance] recentTwotesWithCompletion:^(BOOL success, NSArray *twotes) {
+        if(success)
+        {
+            _aTwotes = [[NSArray alloc] initWithArray:twotes];
+            [self.tableView reloadData];
+            double delayInSeconds = .5f;
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                [activityIndicator stopAnimating];
+                [activityIndicator removeFromSuperview];
+            });
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning

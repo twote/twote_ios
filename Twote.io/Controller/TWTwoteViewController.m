@@ -9,6 +9,7 @@
 #import "TWTwoteViewController.h"
 
 #import "UIBarButtonItem+FlatUI.h"
+#import "TWActivityIndicator.h"
 
 @interface TWTwoteViewController ()
 {
@@ -34,6 +35,38 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // Configure NavigationBar
+    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor colorWithWhite:0.196 alpha:1.000]];
+    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]
+                                  highlightedColor:[UIColor yellowColor]
+                                      cornerRadius:3];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
+    [titleLabel setBackgroundColor:[UIColor clearColor]];
+    [titleLabel setTextAlignment:NSTextAlignmentCenter];
+    [titleLabel setFont:[UIFont fontWithName:@"LeagueGothic-Regular" size:26.0f]];
+    [titleLabel setTextColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]];
+    [titleLabel setText:_twote.twote];
+    [self.navigationItem setTitleView:titleLabel];
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], UITextAttributeTextColor,nil]
+                                                                                            forState:UIControlStateNormal];
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    // Retrive Twote details
+    TWActivityIndicator *activityIndicator = [[TWActivityIndicator alloc] initWithFrame:CGRectMake(0,
+                                                                                                   0,
+                                                                                                   50,
+                                                                                                   50)];
+    [activityIndicator setCenter:CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2)];
+    [self.view addSubview:activityIndicator];
+    [activityIndicator startAnimating];
     
     [[TWDataController sharedInstance] twoteWithName:_twote.twote
                                        andCompletion:^(BOOL success, TWTwote *twote) {
@@ -55,28 +88,15 @@
                                                _barChart.vals = aVals;
                                                _barChart.backgroundColor = [UIColor clearColor];
                                                [_barChart setNeedsDisplay];
+                                               
+                                               double delayInSeconds = .5f;
+                                               dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                                               dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                                                   [activityIndicator stopAnimating];
+                                                   [activityIndicator removeFromSuperview];
+                                               });
                                            }
                                        }];
-}
-
-- (void) viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    // Configure NavigationBar
-    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor colorWithWhite:0.196 alpha:1.000]];
-    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]
-                                  highlightedColor:[UIColor yellowColor]
-                                      cornerRadius:3];
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
-    [titleLabel setBackgroundColor:[UIColor clearColor]];
-    [titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [titleLabel setFont:[UIFont fontWithName:@"LeagueGothic-Regular" size:26.0f]];
-    [titleLabel setTextColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]];
-    [titleLabel setText:_twote.twote];
-    [self.navigationItem setTitleView:titleLabel];
-    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:
-     [NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], UITextAttributeTextColor,nil]
-                                                                                            forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
