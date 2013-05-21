@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A754EB4174BDE80001EFF68 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A754EB2174BDE80001EFF68 /* MainStoryboard.storyboard */; };
 		BEA9E4C9174B5F08005EAC9E /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E48E174B5F08005EAC9E /* FUIAlertView.m */; };
 		BEA9E4CA174B5F08005EAC9E /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E490174B5F08005EAC9E /* FUIButton.m */; };
 		BEA9E4CB174B5F08005EAC9E /* FUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E492174B5F08005EAC9E /* FUISegmentedControl.m */; };
@@ -49,7 +50,6 @@
 		BEF67315174B51B700CBB354 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF67314174B51B700CBB354 /* Default.png */; };
 		BEF67317174B51B700CBB354 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF67316174B51B700CBB354 /* Default@2x.png */; };
 		BEF67319174B51B700CBB354 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF67318174B51B700CBB354 /* Default-568h@2x.png */; };
-		BEF6731C174B51B700CBB354 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF6731A174B51B700CBB354 /* MainStoryboard.storyboard */; };
 		BEF6732A174B530400CBB354 /* TWRecentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF67329174B530400CBB354 /* TWRecentViewController.m */; };
 		BEF673CF174B53E900CBB354 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF673BD174B53E900CBB354 /* AFHTTPClient.m */; };
 		BEF673D0174B53E900CBB354 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF673BF174B53E900CBB354 /* AFHTTPRequestOperation.m */; };
@@ -65,6 +65,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A754EB3174BDE80001EFF68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Twote.io/en.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		BEA9E48D174B5F08005EAC9E /* FUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIAlertView.h; sourceTree = "<group>"; };
 		BEA9E48E174B5F08005EAC9E /* FUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIAlertView.m; sourceTree = "<group>"; };
 		BEA9E48F174B5F08005EAC9E /* FUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIButton.h; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 		BEF67314174B51B700CBB354 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BEF67316174B51B700CBB354 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BEF67318174B51B700CBB354 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		BEF6731B174B51B700CBB354 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BEF67328174B530400CBB354 /* TWRecentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRecentViewController.h; sourceTree = "<group>"; };
 		BEF67329174B530400CBB354 /* TWRecentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRecentViewController.m; sourceTree = "<group>"; };
 		BEF673BC174B53E900CBB354 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -345,7 +345,7 @@
 		BEF67327174B525400CBB354 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BEF6731A174B51B700CBB354 /* MainStoryboard.storyboard */,
+				2A754EB2174BDE80001EFF68 /* MainStoryboard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -444,7 +444,6 @@
 				BEF67315174B51B700CBB354 /* Default.png in Resources */,
 				BEF67317174B51B700CBB354 /* Default@2x.png in Resources */,
 				BEF67319174B51B700CBB354 /* Default-568h@2x.png in Resources */,
-				BEF6731C174B51B700CBB354 /* MainStoryboard.storyboard in Resources */,
 				BEA9E4E3174B5F08005EAC9E /* Lato-Black.ttf in Resources */,
 				BEA9E4E4174B5F08005EAC9E /* Lato-BlackItalic.ttf in Resources */,
 				BEA9E4E5174B5F08005EAC9E /* Lato-Bold.ttf in Resources */,
@@ -458,6 +457,7 @@
 				BEE95CA3174B7295004E470A /* LeagueGothic-Regular.otf in Resources */,
 				BEE95CAB174B8101004E470A /* Icon.png in Resources */,
 				BEE95CAD174B8105004E470A /* Icon@2x.png in Resources */,
+				2A754EB4174BDE80001EFF68 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,21 +504,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2A754EB2174BDE80001EFF68 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A754EB3174BDE80001EFF68 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		BEF6730B174B51B700CBB354 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BEF6730C174B51B700CBB354 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		BEF6731A174B51B700CBB354 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEF6731B174B51B700CBB354 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
