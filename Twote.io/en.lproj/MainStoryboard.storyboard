@@ -12,16 +12,45 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="t4T-0S-Bfj">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="t4T-0S-Bfj" customClass="TWTwoteCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="twote" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pfv-Ky-YaU">
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.90980392156862744" green="0.80784313725490198" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="x votes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="z8b-fA-ygc">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="96" id="92d-tV-8f5"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="pfv-Ky-YaU" firstAttribute="leading" secondItem="t4T-0S-Bfj" secondAttribute="leading" constant="20" type="default" id="CbH-HC-m0N"/>
+                                    <constraint firstItem="z8b-fA-ygc" firstAttribute="leading" secondItem="pfv-Ky-YaU" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="GIB-Wk-8BK"/>
+                                    <constraint firstAttribute="trailing" secondItem="z8b-fA-ygc" secondAttribute="trailing" constant="20" type="default" id="ggi-H0-pdz"/>
+                                    <constraint firstItem="pfv-Ky-YaU" firstAttribute="centerY" secondItem="t4T-0S-Bfj" secondAttribute="centerY" type="default" id="kNg-m8-ggf"/>
+                                    <constraint firstItem="pfv-Ky-YaU" firstAttribute="baseline" secondItem="z8b-fA-ygc" secondAttribute="baseline" type="default" id="yp5-wk-Gs8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="twoteLabel" destination="pfv-Ky-YaU" id="8b0-tM-Vqz"/>
+                                    <outlet property="votesLabel" destination="z8b-fA-ygc" id="yi5-FZ-Sxe"/>
+                                    <segue destination="2mk-La-2je" kind="push" identifier="TwoteDetails" id="YW0-9I-7FP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -30,6 +59,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHn-Xq-ffo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="322" y="110"/>
+        </scene>
+        <!--Twote View Controller-->
+        <scene sceneID="utc-dY-Ju7">
+            <objects>
+                <viewController id="2mk-La-2je" customClass="TWTwoteViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9No-pv-L9b">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xww-t1-AxM" customClass="TWChart">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xww-t1-AxM" firstAttribute="top" secondItem="9No-pv-L9b" secondAttribute="top" constant="40" id="4Op-Oa-QlS"/>
+                            <constraint firstItem="Xww-t1-AxM" firstAttribute="trailing" secondItem="9No-pv-L9b" secondAttribute="trailing" type="default" id="Htj-fw-GYZ"/>
+                            <constraint firstItem="Xww-t1-AxM" firstAttribute="leading" secondItem="9No-pv-L9b" secondAttribute="leading" type="default" id="Zm1-8f-TY2"/>
+                            <constraint firstItem="Xww-t1-AxM" firstAttribute="bottom" secondItem="9No-pv-L9b" secondAttribute="bottom" type="default" id="ffY-L1-fKT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b1K-Fv-wN9"/>
+                    <connections>
+                        <outlet property="_barChart" destination="Xww-t1-AxM" id="9iR-5j-ooQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5H-bL-hZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835" y="110"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vgq-cq-43d">
@@ -49,8 +107,27 @@
         </scene>
     </scenes>
     <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TWChart" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TWChart.h"/>
+        </class>
         <class className="TWRecentViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TWRecentViewController.h"/>
+        </class>
+        <class className="TWTwoteCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TWTwoteCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="twoteLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="votesLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="TWTwoteViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TWTwoteViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="_barChart" candidateClass="TWChart"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
