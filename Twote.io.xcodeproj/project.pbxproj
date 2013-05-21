@@ -38,6 +38,8 @@
 		BEE95CA3174B7295004E470A /* LeagueGothic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */; };
 		BEE95CA7174B76B3004E470A /* TWActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95CA6174B76B3004E470A /* TWActivityIndicator.m */; };
 		BEE95CA9174B76FD004E470A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE95CA8174B76FD004E470A /* QuartzCore.framework */; };
+		BEE95CAB174B8101004E470A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CAA174B8101004E470A /* Icon.png */; };
+		BEE95CAD174B8105004E470A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CAC174B8105004E470A /* Icon@2x.png */; };
 		BEF67303174B51B700CBB354 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67302174B51B700CBB354 /* UIKit.framework */; };
 		BEF67305174B51B700CBB354 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67304174B51B700CBB354 /* Foundation.framework */; };
 		BEF67307174B51B700CBB354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67306174B51B700CBB354 /* CoreGraphics.framework */; };
@@ -110,6 +112,8 @@
 		BEE95CA5174B76B3004E470A /* TWActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWActivityIndicator.h; sourceTree = "<group>"; };
 		BEE95CA6174B76B3004E470A /* TWActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWActivityIndicator.m; sourceTree = "<group>"; };
 		BEE95CA8174B76FD004E470A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BEE95CAA174B8101004E470A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BEE95CAC174B8105004E470A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		BEF672FF174B51B700CBB354 /* Twote.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twote.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF67302174B51B700CBB354 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BEF67304174B51B700CBB354 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -257,6 +261,8 @@
 		BEF672F6174B51B700CBB354 = {
 			isa = PBXGroup;
 			children = (
+				BEE95CAC174B8105004E470A /* Icon@2x.png */,
+				BEE95CAA174B8101004E470A /* Icon.png */,
 				BEF67308174B51B700CBB354 /* Twote.io */,
 				BEF67301174B51B700CBB354 /* Frameworks */,
 				BEF67300174B51B700CBB354 /* Products */,
@@ -450,6 +456,8 @@
 				BEA9E4EB174B5F08005EAC9E /* Lato-LightItalic.ttf in Resources */,
 				BEA9E4EC174B5F08005EAC9E /* Lato-Regular.ttf in Resources */,
 				BEE95CA3174B7295004E470A /* LeagueGothic-Regular.otf in Resources */,
+				BEE95CAB174B8101004E470A /* Icon.png in Resources */,
+				BEE95CAD174B8105004E470A /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
