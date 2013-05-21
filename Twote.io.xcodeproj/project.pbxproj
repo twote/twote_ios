@@ -36,6 +36,8 @@
 		BEE95C82174B681B004E470A /* TWTwoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95C81174B681B004E470A /* TWTwoteViewController.m */; };
 		BEE95CA1174B6F9F004E470A /* TWChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95CA0174B6F9F004E470A /* TWChart.m */; };
 		BEE95CA3174B7295004E470A /* LeagueGothic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */; };
+		BEE95CA7174B76B3004E470A /* TWActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95CA6174B76B3004E470A /* TWActivityIndicator.m */; };
+		BEE95CA9174B76FD004E470A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE95CA8174B76FD004E470A /* QuartzCore.framework */; };
 		BEF67303174B51B700CBB354 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67302174B51B700CBB354 /* UIKit.framework */; };
 		BEF67305174B51B700CBB354 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67304174B51B700CBB354 /* Foundation.framework */; };
 		BEF67307174B51B700CBB354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67306174B51B700CBB354 /* CoreGraphics.framework */; };
@@ -105,6 +107,9 @@
 		BEE95C9F174B6F9F004E470A /* TWChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWChart.h; sourceTree = "<group>"; };
 		BEE95CA0174B6F9F004E470A /* TWChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWChart.m; sourceTree = "<group>"; };
 		BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeagueGothic-Regular.otf"; sourceTree = "<group>"; };
+		BEE95CA5174B76B3004E470A /* TWActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWActivityIndicator.h; sourceTree = "<group>"; };
+		BEE95CA6174B76B3004E470A /* TWActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWActivityIndicator.m; sourceTree = "<group>"; };
+		BEE95CA8174B76FD004E470A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BEF672FF174B51B700CBB354 /* Twote.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twote.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF67302174B51B700CBB354 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BEF67304174B51B700CBB354 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -151,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE95CA9174B76FD004E470A /* QuartzCore.framework in Frameworks */,
 				BEA9E4F5174B5FB6005EAC9E /* MobileCoreServices.framework in Frameworks */,
 				BEA9E4F3174B5FB0005EAC9E /* SystemConfiguration.framework in Frameworks */,
 				BEA9E4F1174B5FAC005EAC9E /* CoreText.framework in Frameworks */,
@@ -239,6 +245,15 @@
 			path = TWChart;
 			sourceTree = "<group>";
 		};
+		BEE95CA4174B76A5004E470A /* TWActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				BEE95CA5174B76B3004E470A /* TWActivityIndicator.h */,
+				BEE95CA6174B76B3004E470A /* TWActivityIndicator.m */,
+			);
+			path = TWActivityIndicator;
+			sourceTree = "<group>";
+		};
 		BEF672F6174B51B700CBB354 = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +274,7 @@
 		BEF67301174B51B700CBB354 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEE95CA8174B76FD004E470A /* QuartzCore.framework */,
 				BEA9E4F4174B5FB6005EAC9E /* MobileCoreServices.framework */,
 				BEA9E4F2174B5FB0005EAC9E /* SystemConfiguration.framework */,
 				BEA9E4F0174B5FAC005EAC9E /* CoreText.framework */,
@@ -331,6 +347,7 @@
 		BEF6732B174B53D900CBB354 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				BEE95CA4174B76A5004E470A /* TWActivityIndicator */,
 				BEE95C9E174B6F9F004E470A /* TWChart */,
 				BEA9E489174B5F08005EAC9E /* FlatUIKit */,
 				BEF673BB174B53E900CBB354 /* AFNetworking */,
@@ -472,6 +489,7 @@
 				BEA9E4D5174B5F08005EAC9E /* UITabBar+FlatUI.m in Sources */,
 				BEE95C82174B681B004E470A /* TWTwoteViewController.m in Sources */,
 				BEE95CA1174B6F9F004E470A /* TWChart.m in Sources */,
+				BEE95CA7174B76B3004E470A /* TWActivityIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
