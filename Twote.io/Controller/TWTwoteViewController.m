@@ -50,7 +50,7 @@
     [titleLabel setTextAlignment:NSTextAlignmentCenter];
     [titleLabel setFont:[UIFont fontWithName:@"LeagueGothic-Regular" size:26.0f]];
     [titleLabel setTextColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]];
-    [titleLabel setText:_twote.twote];
+    [titleLabel setText:[_twote.twote uppercaseString]];
     [self.navigationItem setTitleView:titleLabel];
     [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], UITextAttributeTextColor,nil]
@@ -65,7 +65,7 @@
                                                                                                    50,
                                                                                                    50)];
     [activityIndicator setCenter:CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2)];
-    [self.view addSubview:activityIndicator];
+    [[[[UIApplication sharedApplication] delegate] window] addSubview:activityIndicator];
     [activityIndicator startAnimating];
     
     [[TWDataController sharedInstance] twoteWithName:_twote.twote

@@ -54,7 +54,7 @@
     [titleLabel setTextAlignment:NSTextAlignmentCenter];
     [titleLabel setFont:[UIFont fontWithName:@"LeagueGothic-Regular" size:26.0f]];
     [titleLabel setTextColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]];
-    [titleLabel setText:@"Twote.io"];
+    [titleLabel setText:@"TWOTE.IO"];
     [self.navigationItem setTitleView:titleLabel];
 }
 
@@ -68,7 +68,7 @@
                                                                                                    50,
                                                                                                    50)];
     [activityIndicator setCenter:CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2)];
-    [self.view addSubview:activityIndicator];
+    [[[[UIApplication sharedApplication] delegate] window] addSubview:activityIndicator];
     [activityIndicator startAnimating];
     
     [[TWDataController sharedInstance] recentTwotesWithCompletion:^(BOOL success, NSArray *twotes) {
@@ -113,7 +113,7 @@
 
     TWTwote *twote = (TWTwote *)[_aTwotes objectAtIndex:indexPath.row];
     
-    cell.twoteLabel.text = twote.twote;
+    cell.twoteLabel.text = [twote.twote uppercaseString];
     cell.twoteLabel.font = [UIFont fontWithName:@"LeagueGothic-Regular" size:18.0f];
     
     cell.votesLabel.text = [NSString stringWithFormat:@"%d votes", [twote.overallVotes intValue]];
