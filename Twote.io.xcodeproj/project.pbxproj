@@ -17,7 +17,6 @@
 		BEF67317174B51B700CBB354 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF67316174B51B700CBB354 /* Default@2x.png */; };
 		BEF67319174B51B700CBB354 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF67318174B51B700CBB354 /* Default-568h@2x.png */; };
 		BEF6731C174B51B700CBB354 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF6731A174B51B700CBB354 /* MainStoryboard.storyboard */; };
-		BEF6731F174B51B700CBB354 /* TWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6731E174B51B700CBB354 /* TWViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,14 +28,12 @@
 		BEF6730C174B51B700CBB354 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BEF6730E174B51B700CBB354 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEF67310174B51B700CBB354 /* Twote.io-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Twote.io-Prefix.pch"; sourceTree = "<group>"; };
-		BEF67311174B51B700CBB354 /* TWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWAppDelegate.h; sourceTree = "<group>"; };
-		BEF67312174B51B700CBB354 /* TWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWAppDelegate.m; sourceTree = "<group>"; };
+		BEF67311174B51B700CBB354 /* TWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TWAppDelegate.h; path = ../TWAppDelegate.h; sourceTree = "<group>"; };
+		BEF67312174B51B700CBB354 /* TWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TWAppDelegate.m; path = ../TWAppDelegate.m; sourceTree = "<group>"; };
 		BEF67314174B51B700CBB354 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BEF67316174B51B700CBB354 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BEF67318174B51B700CBB354 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BEF6731B174B51B700CBB354 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		BEF6731D174B51B700CBB354 /* TWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWViewController.h; sourceTree = "<group>"; };
-		BEF6731E174B51B700CBB354 /* TWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +80,9 @@
 		BEF67308174B51B700CBB354 /* Twote.io */ = {
 			isa = PBXGroup;
 			children = (
-				BEF67311174B51B700CBB354 /* TWAppDelegate.h */,
-				BEF67312174B51B700CBB354 /* TWAppDelegate.m */,
-				BEF6731A174B51B700CBB354 /* MainStoryboard.storyboard */,
-				BEF6731D174B51B700CBB354 /* TWViewController.h */,
-				BEF6731E174B51B700CBB354 /* TWViewController.m */,
+				BEF67325174B525400CBB354 /* Controller */,
+				BEF67326174B525400CBB354 /* Model */,
+				BEF67327174B525400CBB354 /* View */,
 				BEF67309174B51B700CBB354 /* Supporting Files */,
 			);
 			path = Twote.io;
@@ -105,6 +100,30 @@
 				BEF67318174B51B700CBB354 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEF67325174B525400CBB354 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BEF67311174B51B700CBB354 /* TWAppDelegate.h */,
+				BEF67312174B51B700CBB354 /* TWAppDelegate.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BEF67326174B525400CBB354 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEF67327174B525400CBB354 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6731A174B51B700CBB354 /* MainStoryboard.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +195,6 @@
 			files = (
 				BEF6730F174B51B700CBB354 /* main.m in Sources */,
 				BEF67313174B51B700CBB354 /* TWAppDelegate.m in Sources */,
-				BEF6731F174B51B700CBB354 /* TWViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +215,7 @@
 				BEF6731B174B51B700CBB354 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
