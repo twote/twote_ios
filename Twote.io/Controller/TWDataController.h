@@ -15,5 +15,6 @@
 + (id) sharedInstance;
 
 - (void) recentTwotesWithCompletion:(void(^)(BOOL success, NSArray *twotes))block;
+- (void) twoteWithName:(NSString *)twoteName andCompletion:(void(^)(BOOL success, TWTwote *twote))block;
 
 @end

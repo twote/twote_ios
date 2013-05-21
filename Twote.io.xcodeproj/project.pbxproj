@@ -33,6 +33,9 @@
 		BEA9E4F1174B5FAC005EAC9E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F0174B5FAC005EAC9E /* CoreText.framework */; };
 		BEA9E4F3174B5FB0005EAC9E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F2174B5FB0005EAC9E /* SystemConfiguration.framework */; };
 		BEA9E4F5174B5FB6005EAC9E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F4174B5FB6005EAC9E /* MobileCoreServices.framework */; };
+		BEE95C82174B681B004E470A /* TWTwoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95C81174B681B004E470A /* TWTwoteViewController.m */; };
+		BEE95CA1174B6F9F004E470A /* TWChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95CA0174B6F9F004E470A /* TWChart.m */; };
+		BEE95CA3174B7295004E470A /* LeagueGothic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */; };
 		BEF67303174B51B700CBB354 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67302174B51B700CBB354 /* UIKit.framework */; };
 		BEF67305174B51B700CBB354 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67304174B51B700CBB354 /* Foundation.framework */; };
 		BEF67307174B51B700CBB354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67306174B51B700CBB354 /* CoreGraphics.framework */; };
@@ -97,6 +100,11 @@
 		BEA9E4F0174B5FAC005EAC9E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		BEA9E4F2174B5FB0005EAC9E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BEA9E4F4174B5FB6005EAC9E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BEE95C80174B681B004E470A /* TWTwoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTwoteViewController.h; sourceTree = "<group>"; };
+		BEE95C81174B681B004E470A /* TWTwoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTwoteViewController.m; sourceTree = "<group>"; };
+		BEE95C9F174B6F9F004E470A /* TWChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWChart.h; sourceTree = "<group>"; };
+		BEE95CA0174B6F9F004E470A /* TWChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWChart.m; sourceTree = "<group>"; };
+		BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeagueGothic-Regular.otf"; sourceTree = "<group>"; };
 		BEF672FF174B51B700CBB354 /* Twote.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twote.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF67302174B51B700CBB354 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BEF67304174B51B700CBB354 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -222,6 +230,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		BEE95C9E174B6F9F004E470A /* TWChart */ = {
+			isa = PBXGroup;
+			children = (
+				BEE95C9F174B6F9F004E470A /* TWChart.h */,
+				BEE95CA0174B6F9F004E470A /* TWChart.m */,
+			);
+			path = TWChart;
+			sourceTree = "<group>";
+		};
 		BEF672F6174B51B700CBB354 = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +284,7 @@
 		BEF67309174B51B700CBB354 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */,
 				BEF6730A174B51B700CBB354 /* Twote.io-Info.plist */,
 				BEF6730B174B51B700CBB354 /* InfoPlist.strings */,
 				BEF6730E174B51B700CBB354 /* main.m */,
@@ -283,10 +301,12 @@
 			children = (
 				BEF67311174B51B700CBB354 /* TWAppDelegate.h */,
 				BEF67312174B51B700CBB354 /* TWAppDelegate.m */,
-				BEF67328174B530400CBB354 /* TWRecentViewController.h */,
-				BEF67329174B530400CBB354 /* TWRecentViewController.m */,
 				BEF673D8174B543C00CBB354 /* TWDataController.h */,
 				BEF673D9174B543C00CBB354 /* TWDataController.m */,
+				BEF67328174B530400CBB354 /* TWRecentViewController.h */,
+				BEF67329174B530400CBB354 /* TWRecentViewController.m */,
+				BEE95C80174B681B004E470A /* TWTwoteViewController.h */,
+				BEE95C81174B681B004E470A /* TWTwoteViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -311,6 +331,7 @@
 		BEF6732B174B53D900CBB354 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				BEE95C9E174B6F9F004E470A /* TWChart */,
 				BEA9E489174B5F08005EAC9E /* FlatUIKit */,
 				BEF673BB174B53E900CBB354 /* AFNetworking */,
 			);
@@ -411,6 +432,7 @@
 				BEA9E4EA174B5F08005EAC9E /* Lato-Light.ttf in Resources */,
 				BEA9E4EB174B5F08005EAC9E /* Lato-LightItalic.ttf in Resources */,
 				BEA9E4EC174B5F08005EAC9E /* Lato-Regular.ttf in Resources */,
+				BEE95CA3174B7295004E470A /* LeagueGothic-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +470,8 @@
 				BEA9E4D3174B5F08005EAC9E /* UISlider+FlatUI.m in Sources */,
 				BEA9E4D4174B5F08005EAC9E /* UIStepper+FlatUI.m in Sources */,
 				BEA9E4D5174B5F08005EAC9E /* UITabBar+FlatUI.m in Sources */,
+				BEE95C82174B681B004E470A /* TWTwoteViewController.m in Sources */,
+				BEE95CA1174B6F9F004E470A /* TWChart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
