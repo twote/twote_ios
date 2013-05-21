@@ -7,7 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A31C401174C1AB800828060 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31C3EF174C1AB800828060 /* AFHTTPClient.m */; };
+		2A31C402174C1AB800828060 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31C3F1174C1AB800828060 /* AFHTTPRequestOperation.m */; };
+		2A31C403174C1AB800828060 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31C3F3174C1AB800828060 /* AFImageRequestOperation.m */; };
+		2A31C404174C1AB800828060 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31C3F5174C1AB800828060 /* AFJSONRequestOperation.m */; };
+		2A31C405174C1AB800828060 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31C3F7174C1AB800828060 /* AFNetworkActivityIndicatorManager.m */; };
+		2A31C406174C1AB800828060 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31C3FA174C1AB800828060 /* AFPropertyListRequestOperation.m */; };
+		2A31C407174C1AB800828060 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31C3FC174C1AB800828060 /* AFURLConnectionOperation.m */; };
+		2A31C408174C1AB800828060 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31C3FE174C1AB800828060 /* AFXMLRequestOperation.m */; };
+		2A31C409174C1AB800828060 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31C400174C1AB800828060 /* UIImageView+AFNetworking.m */; };
+		2A31C40C174C1E5100828060 /* TWTwoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31C40B174C1E5100828060 /* TWTwoteTests.m */; };
 		2A754EB4174BDE80001EFF68 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A754EB2174BDE80001EFF68 /* MainStoryboard.storyboard */; };
+		2ACF76AB174C13CD00844B95 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACF76AA174C13CD00844B95 /* SenTestingKit.framework */; };
+		2ACF76AC174C13CD00844B95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67302174B51B700CBB354 /* UIKit.framework */; };
+		2ACF76AD174C13CD00844B95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF67304174B51B700CBB354 /* Foundation.framework */; };
+		2ACF76B3174C13CD00844B95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ACF76B1174C13CD00844B95 /* InfoPlist.strings */; };
+		2ACF76C5174C151A00844B95 /* TWDataControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF76C4174C151A00844B95 /* TWDataControllerTests.m */; };
+		2ACF76D3174C18EF00844B95 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACF76D2174C18EF00844B95 /* libOCMock.a */; };
 		BEA9E4C9174B5F08005EAC9E /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E48E174B5F08005EAC9E /* FUIAlertView.m */; };
 		BEA9E4CA174B5F08005EAC9E /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E490174B5F08005EAC9E /* FUIButton.m */; };
 		BEA9E4CB174B5F08005EAC9E /* FUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E492174B5F08005EAC9E /* FUISegmentedControl.m */; };
@@ -64,8 +80,51 @@
 		BEF673DD174B598900CBB354 /* TWTwote.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF673DC174B598900CBB354 /* TWTwote.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2ACF76BB174C13E100844B95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEF672F7174B51B700CBB354 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF672FE174B51B700CBB354;
+			remoteInfo = Twote.io;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2A31C3EE174C1AB800828060 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		2A31C3EF174C1AB800828060 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		2A31C3F0174C1AB800828060 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		2A31C3F1174C1AB800828060 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		2A31C3F2174C1AB800828060 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		2A31C3F3174C1AB800828060 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		2A31C3F4174C1AB800828060 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		2A31C3F5174C1AB800828060 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		2A31C3F6174C1AB800828060 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		2A31C3F7174C1AB800828060 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		2A31C3F8174C1AB800828060 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		2A31C3F9174C1AB800828060 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		2A31C3FA174C1AB800828060 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		2A31C3FB174C1AB800828060 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		2A31C3FC174C1AB800828060 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		2A31C3FD174C1AB800828060 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		2A31C3FE174C1AB800828060 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		2A31C3FF174C1AB800828060 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		2A31C400174C1AB800828060 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		2A31C40B174C1E5100828060 /* TWTwoteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTwoteTests.m; sourceTree = "<group>"; };
 		2A754EB3174BDE80001EFF68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Twote.io/en.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		2ACF76A9174C13CD00844B95 /* Twote.ioTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Twote.ioTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ACF76AA174C13CD00844B95 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2ACF76B0174C13CD00844B95 /* Twote.ioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Twote.ioTests-Info.plist"; sourceTree = "<group>"; };
+		2ACF76B2174C13CD00844B95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2ACF76B7174C13CD00844B95 /* Twote.ioTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Twote.ioTests-Prefix.pch"; sourceTree = "<group>"; };
+		2ACF76C4174C151A00844B95 /* TWDataControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWDataControllerTests.m; sourceTree = "<group>"; };
+		2ACF76C9174C17D200844B95 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		2ACF76CA174C17D200844B95 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		2ACF76CB174C17D200844B95 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		2ACF76CC174C17D200844B95 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		2ACF76CD174C17D200844B95 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		2ACF76CE174C17D200844B95 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		2ACF76D2174C18EF00844B95 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		BEA9E48D174B5F08005EAC9E /* FUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIAlertView.h; sourceTree = "<group>"; };
 		BEA9E48E174B5F08005EAC9E /* FUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIAlertView.m; sourceTree = "<group>"; };
 		BEA9E48F174B5F08005EAC9E /* FUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIButton.h; sourceTree = "<group>"; };
@@ -156,6 +215,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2ACF76A5174C13CD00844B95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACF76AB174C13CD00844B95 /* SenTestingKit.framework in Frameworks */,
+				2ACF76AC174C13CD00844B95 /* UIKit.framework in Frameworks */,
+				2ACF76AD174C13CD00844B95 /* Foundation.framework in Frameworks */,
+				2ACF76D3174C18EF00844B95 /* libOCMock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF672FC174B51B700CBB354 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +243,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A31C3ED174C1AB800828060 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2A31C3EE174C1AB800828060 /* AFHTTPClient.h */,
+				2A31C3EF174C1AB800828060 /* AFHTTPClient.m */,
+				2A31C3F0174C1AB800828060 /* AFHTTPRequestOperation.h */,
+				2A31C3F1174C1AB800828060 /* AFHTTPRequestOperation.m */,
+				2A31C3F2174C1AB800828060 /* AFImageRequestOperation.h */,
+				2A31C3F3174C1AB800828060 /* AFImageRequestOperation.m */,
+				2A31C3F4174C1AB800828060 /* AFJSONRequestOperation.h */,
+				2A31C3F5174C1AB800828060 /* AFJSONRequestOperation.m */,
+				2A31C3F6174C1AB800828060 /* AFNetworkActivityIndicatorManager.h */,
+				2A31C3F7174C1AB800828060 /* AFNetworkActivityIndicatorManager.m */,
+				2A31C3F8174C1AB800828060 /* AFNetworking.h */,
+				2A31C3F9174C1AB800828060 /* AFPropertyListRequestOperation.h */,
+				2A31C3FA174C1AB800828060 /* AFPropertyListRequestOperation.m */,
+				2A31C3FB174C1AB800828060 /* AFURLConnectionOperation.h */,
+				2A31C3FC174C1AB800828060 /* AFURLConnectionOperation.m */,
+				2A31C3FD174C1AB800828060 /* AFXMLRequestOperation.h */,
+				2A31C3FE174C1AB800828060 /* AFXMLRequestOperation.m */,
+				2A31C3FF174C1AB800828060 /* UIImageView+AFNetworking.h */,
+				2A31C400174C1AB800828060 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			path = Twote.io/Libs/AFNetworking/AFNetworking;
+			sourceTree = SOURCE_ROOT;
+		};
+		2ACF76AE174C13CD00844B95 /* Twote.ioTests */ = {
+			isa = PBXGroup;
+			children = (
+				2ACF76C6174C17D200844B95 /* Libraries */,
+				2ACF76BD174C148C00844B95 /* Controller */,
+				2ACF76C0174C148C00844B95 /* Model */,
+				2ACF76C1174C148C00844B95 /* View */,
+				2ACF76AF174C13CD00844B95 /* Supporting Files */,
+			);
+			path = Twote.ioTests;
+			sourceTree = "<group>";
+		};
+		2ACF76AF174C13CD00844B95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ACF76B0174C13CD00844B95 /* Twote.ioTests-Info.plist */,
+				2ACF76B1174C13CD00844B95 /* InfoPlist.strings */,
+				2ACF76B7174C13CD00844B95 /* Twote.ioTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2ACF76BD174C148C00844B95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2ACF76C4174C151A00844B95 /* TWDataControllerTests.m */,
+				2A31C40B174C1E5100828060 /* TWTwoteTests.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2ACF76C0174C148C00844B95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2ACF76C1174C148C00844B95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2ACF76C6174C17D200844B95 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2A31C3ED174C1AB800828060 /* AFNetworking */,
+				2ACF76C7174C17D200844B95 /* OCMock */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		2ACF76C7174C17D200844B95 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				2ACF76D2174C18EF00844B95 /* libOCMock.a */,
+				2ACF76C9174C17D200844B95 /* NSNotificationCenter+OCMAdditions.h */,
+				2ACF76CA174C17D200844B95 /* OCMArg.h */,
+				2ACF76CB174C17D200844B95 /* OCMConstraint.h */,
+				2ACF76CC174C17D200844B95 /* OCMock.h */,
+				2ACF76CD174C17D200844B95 /* OCMockObject.h */,
+				2ACF76CE174C17D200844B95 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
 		BEA9E489174B5F08005EAC9E /* FlatUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +429,7 @@
 				BEE95CAC174B8105004E470A /* Icon@2x.png */,
 				BEE95CAA174B8101004E470A /* Icon.png */,
 				BEF67308174B51B700CBB354 /* Twote.io */,
+				2ACF76AE174C13CD00844B95 /* Twote.ioTests */,
 				BEF67301174B51B700CBB354 /* Frameworks */,
 				BEF67300174B51B700CBB354 /* Products */,
 			);
@@ -273,6 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				BEF672FF174B51B700CBB354 /* Twote.io.app */,
+				2ACF76A9174C13CD00844B95 /* Twote.ioTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,6 +454,7 @@
 				BEF67302174B51B700CBB354 /* UIKit.framework */,
 				BEF67304174B51B700CBB354 /* Foundation.framework */,
 				BEF67306174B51B700CBB354 /* CoreGraphics.framework */,
+				2ACF76AA174C13CD00844B95 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -391,6 +559,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2ACF76A8174C13CD00844B95 /* Twote.ioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ACF76BA174C13CD00844B95 /* Build configuration list for PBXNativeTarget "Twote.ioTests" */;
+			buildPhases = (
+				2ACF76A4174C13CD00844B95 /* Sources */,
+				2ACF76A5174C13CD00844B95 /* Frameworks */,
+				2ACF76A6174C13CD00844B95 /* Resources */,
+				2ACF76A7174C13CD00844B95 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ACF76BC174C13E100844B95 /* PBXTargetDependency */,
+			);
+			name = Twote.ioTests;
+			productName = Twote.ioTests;
+			productReference = 2ACF76A9174C13CD00844B95 /* Twote.ioTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		BEF672FE174B51B700CBB354 /* Twote.io */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEF67322174B51B700CBB354 /* Build configuration list for PBXNativeTarget "Twote.io" */;
@@ -431,11 +618,20 @@
 			projectRoot = "";
 			targets = (
 				BEF672FE174B51B700CBB354 /* Twote.io */,
+				2ACF76A8174C13CD00844B95 /* Twote.ioTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2ACF76A6174C13CD00844B95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACF76B3174C13CD00844B95 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF672FD174B51B700CBB354 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,7 +659,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2ACF76A7174C13CD00844B95 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2ACF76A4174C13CD00844B95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACF76C5174C151A00844B95 /* TWDataControllerTests.m in Sources */,
+				2A31C401174C1AB800828060 /* AFHTTPClient.m in Sources */,
+				2A31C402174C1AB800828060 /* AFHTTPRequestOperation.m in Sources */,
+				2A31C403174C1AB800828060 /* AFImageRequestOperation.m in Sources */,
+				2A31C404174C1AB800828060 /* AFJSONRequestOperation.m in Sources */,
+				2A31C405174C1AB800828060 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				2A31C406174C1AB800828060 /* AFPropertyListRequestOperation.m in Sources */,
+				2A31C407174C1AB800828060 /* AFURLConnectionOperation.m in Sources */,
+				2A31C408174C1AB800828060 /* AFXMLRequestOperation.m in Sources */,
+				2A31C409174C1AB800828060 /* UIImageView+AFNetworking.m in Sources */,
+				2A31C40C174C1E5100828060 /* TWTwoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF672FB174B51B700CBB354 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -503,6 +733,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2ACF76BC174C13E100844B95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF672FE174B51B700CBB354 /* Twote.io */;
+			targetProxy = 2ACF76BB174C13E100844B95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		2A754EB2174BDE80001EFF68 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -510,6 +748,14 @@
 				2A754EB3174BDE80001EFF68 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		2ACF76B1174C13CD00844B95 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ACF76B2174C13CD00844B95 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		BEF6730B174B51B700CBB354 /* InfoPlist.strings */ = {
@@ -523,6 +769,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2ACF76B8174C13CD00844B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Twote.io.app/Twote.io";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Twote.ioTests/Twote.ioTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Twote.ioTests/Libraries/OCMock\"/**";
+				INFOPLIST_FILE = "Twote.ioTests/Twote.ioTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Twote.ioTests/Libraries/OCMock\"/**",
+					"\"$(SRCROOT)/Twote.ioTests/Libraries\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2ACF76B9174C13CD00844B95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Twote.io.app/Twote.io";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Twote.ioTests/Twote.ioTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Twote.ioTests/Libraries/OCMock\"/**";
+				INFOPLIST_FILE = "Twote.ioTests/Twote.ioTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Twote.ioTests/Libraries/OCMock\"/**",
+					"\"$(SRCROOT)/Twote.ioTests/Libraries\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		BEF67320174B51B700CBB354 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -604,6 +900,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2ACF76BA174C13CD00844B95 /* Build configuration list for PBXNativeTarget "Twote.ioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ACF76B8174C13CD00844B95 /* Debug */,
+				2ACF76B9174C13CD00844B95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BEF672FA174B51B700CBB354 /* Build configuration list for PBXProject "Twote.io" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
