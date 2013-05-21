@@ -57,7 +57,7 @@
         
         /// Reference Label.
         UILabel *lblRef = [[UILabel alloc] initWithFrame:CGRectMake(barCount + x, rect.size.height - LBL_HEIGHT, rectWidth, LBL_HEIGHT)];
-        lblRef.text = [refs objectAtIndex:barCount];
+        lblRef.text = [[refs objectAtIndex:barCount] uppercaseString];
         lblRef.adjustsFontSizeToFitWidth = TRUE;
         lblRef.adjustsLetterSpacingToFitWidth = TRUE;
         lblRef.textColor = self.color;
