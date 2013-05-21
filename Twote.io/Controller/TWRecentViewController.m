@@ -8,6 +8,19 @@
 
 #import "TWRecentViewController.h"
 
+#import "TWTwoteViewController.h"
+
+@interface TWTwoteCell ()
+
+@end
+
+@implementation TWTwoteCell
+
+@synthesize twoteLabel;
+@synthesize votesLabel;
+
+@end
+
 @interface TWRecentViewController ()
 {
     NSArray *_aTwotes;
@@ -28,17 +41,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Configure NavigationBar
-    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor colorWithWhite:0.196 alpha:1.000]];
-    [self.tableView setSeparatorColor:[UIColor darkGrayColor]];
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
-    [titleLabel setBackgroundColor:[UIColor clearColor]];
-    [titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [titleLabel setFont:[UIFont boldSystemFontOfSize:15.0f]];
-    [titleLabel setTextColor:[UIColor yellowColor]];
-    [titleLabel setText:@"Twote.io"];
-    [self.navigationItem setTitleView:titleLabel];
     
     // Retrieve recent Twotes
     [[TWDataController sharedInstance] recentTwotesWithCompletion:^(BOOL success, NSArray *twotes) {
@@ -48,6 +50,20 @@
             [self.tableView reloadData];
         }
     }];
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // Configure NavigationBar
+    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor colorWithWhite:0.196 alpha:1.000]];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
+    [titleLabel setBackgroundColor:[UIColor clearColor]];
+    [titleLabel setTextAlignment:NSTextAlignmentCenter];
+    [titleLabel setFont:[UIFont fontWithName:@"LeagueGothic-Regular" size:26.0f]];
+    [titleLabel setTextColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]];
+    [titleLabel setText:@"Twote.io"];
+    [self.navigationItem setTitleView:titleLabel];
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,13 +89,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    TWTwoteCell *cell = (TWTwoteCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 
     TWTwote *twote = (TWTwote *)[_aTwotes objectAtIndex:indexPath.row];
     
-    cell.backgroundColor = [UIColor blackColor];
-    cell.textLabel.textColor = [UIColor yellowColor];
-    cell.textLabel.text = twote.twote;
+    cell.twoteLabel.text = twote.twote;
+    cell.twoteLabel.font = [UIFont fontWithName:@"LeagueGothic-Regular" size:18.0f];
+    
+    cell.votesLabel.text = [NSString stringWithFormat:@"%d votes", [twote.overallVotes intValue]];
+    cell.votesLabel.font = [UIFont fontWithName:@"LeagueGothic-Regular" size:18.0f];
     
     return cell;
 }
@@ -127,13 +145,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+#pragma mark - Segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"TwoteDetails"])
+    {
+        TWTwoteViewController *viewController = (TWTwoteViewController *)segue.destinationViewController;
+        viewController.twote = (TWTwote *)[_aTwotes objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+    }
+}
 @end

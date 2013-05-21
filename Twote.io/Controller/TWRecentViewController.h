@@ -10,6 +10,13 @@
 
 #import "TWDataController.h"
 
+@interface TWTwoteCell : UITableViewCell
+
+@property (nonatomic, retain) IBOutlet UILabel *twoteLabel;
+@property (nonatomic, retain) IBOutlet UILabel *votesLabel;
+
+@end
+
 @interface TWRecentViewController : UITableViewController
 
 @end
