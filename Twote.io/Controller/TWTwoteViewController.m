@@ -11,7 +11,7 @@
 #import "UIBarButtonItem+FlatUI.h"
 #import "TWActivityIndicator.h"
 
-@interface TWTwoteViewController ()
+@interface TWTwoteViewController () <TWChartDelegate>
 {
     IBOutlet TWChart *_barChart;
     TWTwote *_twote;
@@ -74,6 +74,7 @@
                                            {
                                                _twote = twote;
                                                _barChart.color = [UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000];
+                                               _barChart.delegate = self;
                                                
                                                NSMutableArray *aRefs = [[NSMutableArray alloc] init];
                                                NSMutableArray *aVals = [[NSMutableArray alloc] init];
@@ -103,6 +104,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - ChartDelegate
+- (void) chartDidSelectButtonItemAtIndex:(NSInteger)index
+{
+    NSLog(@"Selected Button: %d", index);
 }
 
 @end
