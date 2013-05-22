@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TWChartDelegate <NSObject>
+
+@optional
+- (void) chartDidSelectButtonItemAtIndex:(NSInteger)index;
+
+@end
+
 @interface TWChart : UIView
+
 -(TWChart * )initWithFrame:(CGRect)frame
                         color:(UIColor*)theColor
                    references:(NSArray *)references
@@ -18,4 +26,6 @@
 @property (atomic, strong) UIColor *color;
 @property (atomic) NSArray* vals;
 @property (atomic) NSArray* refs;
+@property (nonatomic) id <TWChartDelegate> delegate;
+
 @end

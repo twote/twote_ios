@@ -9,7 +9,7 @@
 #import "TWChart.h"
 
 @implementation TWChart
-@synthesize color, numberOfBars, maxLen, refs, vals;
+@synthesize color, numberOfBars, maxLen, refs, vals, delegate;
 
 -(TWChart *)initWithFrame:(CGRect)frame
                        color:(UIColor *)theColor
@@ -54,7 +54,7 @@
         height = heightRatio * rect.size.height;
         if (height < 0.1f) height = 1.0f;
         y = rect.size.height - height - LBL_HEIGHT;
-        
+
         /// Reference Label.
         UILabel *lblRef = [[UILabel alloc] initWithFrame:CGRectMake(barCount + x, rect.size.height - LBL_HEIGHT, rectWidth, LBL_HEIGHT)];
         lblRef.text = [[refs objectAtIndex:barCount] uppercaseString];
@@ -68,9 +68,14 @@
         
         /// Set color and draw the bar
         iColor = [UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000];
-        CGContextSetFillColorWithColor(context, iColor.CGColor);
-        CGRect barRect = CGRectMake(barCount + x, y, rectWidth, height);
-        CGContextFillRect(context, barRect);
+        int maxHeight = 20;
+        CGRect barRect = CGRectMake(barCount + x, y + maxHeight, rectWidth, height - maxHeight);
+        UIButton *barBtn = [[UIButton alloc] initWithFrame:barRect];
+        [barBtn setBackgroundColor:iColor];
+        [barBtn setShowsTouchWhenHighlighted:YES];
+        [barBtn setTag:barCount];
+        [barBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:barBtn];
     }
     
     /// pivot
@@ -93,5 +98,16 @@
     CGContextFillRect(context, frame);
 }
 
+- (void) buttonPressed:(id)sender
+{
+    if(self.delegate)
+    {
+        UIButton *button = (UIButton *)sender;
+        if([self.delegate respondsToSelector:@selector(chartDidSelectButtonItemAtIndex:)])
+            [self.delegate chartDidSelectButtonItemAtIndex:button.tag];
+    }
+}
+
+#pragma mark - Delegate
 
 @end
