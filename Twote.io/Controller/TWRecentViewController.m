@@ -116,7 +116,7 @@
     cell.twoteLabel.text = [twote.twote uppercaseString];
     cell.twoteLabel.font = [UIFont fontWithName:@"LeagueGothic-Regular" size:18.0f];
     
-    cell.votesLabel.text = [NSString stringWithFormat:@"%d votes", [twote.overallVotes intValue]];
+    cell.votesLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%1$d votes", @"%1$d votes"), [twote.overallVotes intValue]];
     cell.votesLabel.font = [UIFont fontWithName:@"LeagueGothic-Regular" size:18.0f];
     
     return cell;
