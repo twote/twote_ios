@@ -126,6 +126,7 @@
         <class className="TWTwoteViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TWTwoteViewController.h"/>
             <relationships>
+                <relationship kind="action" name="voteNowPressed:"/>
                 <relationship kind="outlet" name="_barChart" candidateClass="TWChart"/>
             </relationships>
         </class>

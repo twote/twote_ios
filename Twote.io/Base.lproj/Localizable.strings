@@ -7,3 +7,7 @@
 */
 
 "%1$d votes" = "%1$d votes";
+"i just #twote #%@ #%@" = "i just #twote #%@ #%@";
+"Success" = "Success";
+"Your vote has been posted successfully!\nThank you very much." = "Your vote has been posted successfully!\nThank you very much.";
+"OK" = "OK";
