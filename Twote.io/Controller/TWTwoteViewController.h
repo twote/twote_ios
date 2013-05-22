@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
 
 #import "TWDataController.h"
 #import "TWChart.h"

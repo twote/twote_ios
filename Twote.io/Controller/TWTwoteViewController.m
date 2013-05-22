@@ -109,7 +109,33 @@
 #pragma mark - ChartDelegate
 - (void) chartDidSelectButtonItemAtIndex:(NSInteger)index
 {
-    NSLog(@"Selected Button: %d", index);
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+         SLComposeViewController *socialComposeVc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        SLComposeViewControllerCompletionHandler completionHandler=
+        ^(SLComposeViewControllerResult result){
+            
+            [socialComposeVc dismissViewControllerAnimated:YES completion:nil];
+            
+            if(result == SLComposeViewControllerResultDone)
+            {
+                [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Success", nil)
+                                            message:NSLocalizedString(@"Your vote has been posted successfully!\nThank you very much.", nil)
+                                           delegate:nil
+                                  cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                  otherButtonTitles:nil] show];
+            }
+        };
+        
+        [socialComposeVc setInitialText:
+         [NSString stringWithFormat:NSLocalizedString(@"i just #twote #%@ #%@", nil),
+          [_twote.twote lowercaseString],
+          [[[_twote.votes allKeys] objectAtIndex:index] lowercaseString]
+          ]
+         ];
+        [socialComposeVc setCompletionHandler:completionHandler];
+        [self presentViewController:socialComposeVc animated:YES completion:nil];
+    }
 }
 
 @end

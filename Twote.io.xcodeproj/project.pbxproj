@@ -23,6 +23,7 @@
 		2ACF76B3174C13CD00844B95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ACF76B1174C13CD00844B95 /* InfoPlist.strings */; };
 		2ACF76C5174C151A00844B95 /* TWDataControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF76C4174C151A00844B95 /* TWDataControllerTests.m */; };
 		2ACF76D3174C18EF00844B95 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACF76D2174C18EF00844B95 /* libOCMock.a */; };
+		BE06D2F1174CB55A0071769D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE06D2F0174CB55A0071769D /* Social.framework */; };
 		BE2FF728174CA9060088B2B8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2FF726174CA9060088B2B8 /* MainStoryboard.storyboard */; };
 		BE2FF72B174CA9190088B2B8 /* MainStoryboard.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE2FF729174CA9190088B2B8 /* MainStoryboard.strings */; };
 		BE2FF72E174CA9210088B2B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE2FF72C174CA9210088B2B8 /* InfoPlist.strings */; };
@@ -126,6 +127,7 @@
 		2ACF76CD174C17D200844B95 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		2ACF76CE174C17D200844B95 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		2ACF76D2174C18EF00844B95 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		BE06D2F0174CB55A0071769D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		BE2FF721174CA7C50088B2B8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE2FF727174CA9060088B2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Twote.io/Base.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		BE2FF72A174CA9190088B2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE06D2F1174CB55A0071769D /* Social.framework in Frameworks */,
 				BEE95CA9174B76FD004E470A /* QuartzCore.framework in Frameworks */,
 				BEA9E4F5174B5FB6005EAC9E /* MobileCoreServices.framework in Frameworks */,
 				BEA9E4F3174B5FB0005EAC9E /* SystemConfiguration.framework in Frameworks */,
@@ -455,6 +458,7 @@
 		BEF67301174B51B700CBB354 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE06D2F0174CB55A0071769D /* Social.framework */,
 				BEE95CA8174B76FD004E470A /* QuartzCore.framework */,
 				BEA9E4F4174B5FB6005EAC9E /* MobileCoreServices.framework */,
 				BEA9E4F2174B5FB0005EAC9E /* SystemConfiguration.framework */,
