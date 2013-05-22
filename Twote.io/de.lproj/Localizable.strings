@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Twote.io
+
+  Created by Marcus Kida on 22.05.13.
+  Copyright (c) 2013 Twote.io. All rights reserved.
+*/
+
+"%1$d votes" = "%1$d stimmen";
