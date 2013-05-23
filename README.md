@@ -1,4 +1,4 @@
-## Twote.io for iOS
+# Twote.io for iOS
 
 Welcome to the official iOS App for Twote.io!
 This App is in an early state of development, at the moment the recent Twotes can be viewed, voting will be added at a later time.
@@ -15,7 +15,7 @@ After building the App via Xcode you will see the following screens. Have fun an
 ![Twote Details](http://kimar.github.io/screenshots/twote/screen2.png)
 ![Twote via Twitter](http://kimar.github.io/screenshots/twote/screen3.png)
 
-# Todo
+## Todo
 
 * Create new polls (via tweet)
 * Fix loading animation when active while rotating device
