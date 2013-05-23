@@ -19,4 +19,4 @@ After building the App via Xcode you will see the following screens. Have fun an
 
 * Create new polls (via tweet)
 * Fix loading animation when active while rotating device
-* add pull to refresh
+* ~~add pull to refresh~~

@@ -24,6 +24,7 @@
 @interface TWRecentViewController ()
 {
     NSArray *_aTwotes;
+    BOOL _didAppear;
 }
 @end
 
@@ -41,6 +42,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.refreshControl addTarget:self
+                            action:@selector(refresh:)
+                  forControlEvents:UIControlEventValueChanged];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -61,6 +65,14 @@
 {
     [super viewDidAppear:animated];
     
+    if(!_didAppear)
+    {
+        [self refresh:nil];
+    }
+}
+
+- (IBAction) refresh:(id)sender
+{
     // Retrieve recent Twotes
     TWActivityView* activityView = [[TWActivityView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 4) andActivityBar:[UIImage imageNamed:@"ActivityBar"]];
     [activityView start];
@@ -76,6 +88,7 @@
             dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
                 [activityView stop];
                 [activityView removeFromSuperview];
+                [self.refreshControl endRefreshing];
             });
         }
     }];
