@@ -9,7 +9,6 @@
 #import "TWTwoteViewController.h"
 
 #import "UIBarButtonItem+FlatUI.h"
-#import "TWActivityIndicator.h"
 
 @interface TWTwoteViewController () <TWChartDelegate>
 {
@@ -60,13 +59,9 @@
 - (void) viewDidAppear:(BOOL)animated
 {
     // Retrive Twote details
-    TWActivityIndicator *activityIndicator = [[TWActivityIndicator alloc] initWithFrame:CGRectMake(0,
-                                                                                                   0,
-                                                                                                   50,
-                                                                                                   50)];
-    [activityIndicator setCenter:CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2)];
-    [[[[UIApplication sharedApplication] delegate] window] addSubview:activityIndicator];
-    [activityIndicator startAnimating];
+    FPActivityView* activityView = [[FPActivityView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 4) andActivityBar:[UIImage imageNamed:@"ActivityBar"]];
+    [activityView start];
+    [self.view addSubview:activityView];
     
     [[TWDataController sharedInstance] twoteWithName:_twote.twote
                                        andCompletion:^(BOOL success, TWTwote *twote) {
@@ -93,8 +88,8 @@
                                                double delayInSeconds = .5f;
                                                dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
                                                dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-                                                   [activityIndicator stopAnimating];
-                                                   [activityIndicator removeFromSuperview];
+                                                   [activityView stop];
+                                                   [activityView removeFromSuperview];
                                                });
                                            }
                                        }];
