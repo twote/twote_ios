@@ -14,3 +14,9 @@ After building the App via Xcode you will see the following screens. Have fun an
 ![Main Screen](http://kimar.github.io/screenshots/twote/screen1.png)
 ![Twote Details](http://kimar.github.io/screenshots/twote/screen2.png)
 ![Twote via Twitter](http://kimar.github.io/screenshots/twote/screen3.png)
+
+# Todo
+
+* Create new polls (via tweet)
+* Fix loading animation when active while rotating device
+* add pull to refresh
