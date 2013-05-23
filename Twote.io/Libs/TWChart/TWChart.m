@@ -37,9 +37,16 @@
 
 - (void)drawRect:(CGRect)rect
 {
+    // Remove all subviews if any
+    for (UIView *subview in [self subviews])
+        [subview removeFromSuperview];
+    
     /// Drawing code
     [self calculate];
     float rectWidth = (float)(rect.size.width-(self.numberOfBars)) / (float)self.numberOfBars;
+    if(rectWidth > 60)
+        rectWidth = 60;
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     float LBL_HEIGHT = 20.0f, iLen, x, heightRatio, height, y;
     UIColor *iColor ;
@@ -69,6 +76,7 @@
         /// Set color and draw the bar
         iColor = [UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000];
         int maxHeight = 20;
+
         CGRect barRect = CGRectMake(barCount + x, y + maxHeight, rectWidth, height - maxHeight);
         UIButton *barBtn = [[UIButton alloc] initWithFrame:barRect];
         [barBtn setBackgroundColor:iColor];
@@ -98,6 +106,7 @@
     CGContextFillRect(context, frame);
 }
 
+#pragma mark - Delegate Methods
 - (void) buttonPressed:(id)sender
 {
     if(self.delegate)
@@ -107,7 +116,5 @@
             [self.delegate chartDidSelectButtonItemAtIndex:button.tag];
     }
 }
-
-#pragma mark - Delegate
 
 @end
