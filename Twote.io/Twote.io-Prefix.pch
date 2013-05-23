@@ -13,9 +13,8 @@
     #import <Foundation/Foundation.h>
     #import <SystemConfiguration/SystemConfiguration.h>
     #import <MobileCoreServices/MobileCoreServices.h>
-    #import <QuartzCore/QuartzCore.h>
 
     #import "AFNetworking.h"
     #import "UINavigationBar+FlatUI.h"
-    #import "FPActivityView.h"
+    #import "TWActivityView.h"
 #endif

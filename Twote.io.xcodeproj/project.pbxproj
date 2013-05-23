@@ -54,9 +54,9 @@
 		BEA9E4F1174B5FAC005EAC9E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F0174B5FAC005EAC9E /* CoreText.framework */; };
 		BEA9E4F3174B5FB0005EAC9E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F2174B5FB0005EAC9E /* SystemConfiguration.framework */; };
 		BEA9E4F5174B5FB6005EAC9E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F4174B5FB6005EAC9E /* MobileCoreServices.framework */; };
-		BEAE045C174E044A004D4226 /* FPActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAE045B174E044A004D4226 /* FPActivityView.m */; };
 		BEAE0460174E0738004D4226 /* ActivityBar.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAE045E174E0737004D4226 /* ActivityBar.png */; };
 		BEAE0461174E0738004D4226 /* ActivityBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAE045F174E0737004D4226 /* ActivityBar@2x.png */; };
+		BEAE0465174E17BF004D4226 /* TWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAE0464174E17BF004D4226 /* TWActivityView.m */; };
 		BEE95C82174B681B004E470A /* TWTwoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95C81174B681B004E470A /* TWTwoteViewController.m */; };
 		BEE95CA1174B6F9F004E470A /* TWChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95CA0174B6F9F004E470A /* TWChart.m */; };
 		BEE95CA3174B7295004E470A /* LeagueGothic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */; };
@@ -177,10 +177,10 @@
 		BEA9E4F0174B5FAC005EAC9E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		BEA9E4F2174B5FB0005EAC9E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BEA9E4F4174B5FB6005EAC9E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		BEAE045A174E044A004D4226 /* FPActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPActivityView.h; sourceTree = "<group>"; };
-		BEAE045B174E044A004D4226 /* FPActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPActivityView.m; sourceTree = "<group>"; };
 		BEAE045E174E0737004D4226 /* ActivityBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ActivityBar.png; sourceTree = "<group>"; };
 		BEAE045F174E0737004D4226 /* ActivityBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ActivityBar@2x.png"; sourceTree = "<group>"; };
+		BEAE0463174E17BF004D4226 /* TWActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWActivityView.h; sourceTree = "<group>"; };
+		BEAE0464174E17BF004D4226 /* TWActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWActivityView.m; sourceTree = "<group>"; };
 		BEE95C80174B681B004E470A /* TWTwoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTwoteViewController.h; sourceTree = "<group>"; };
 		BEE95C81174B681B004E470A /* TWTwoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTwoteViewController.m; sourceTree = "<group>"; };
 		BEE95C9F174B6F9F004E470A /* TWChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWChart.h; sourceTree = "<group>"; };
@@ -420,16 +420,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		BEAE0459174E044A004D4226 /* FPActivityView */ = {
-			isa = PBXGroup;
-			children = (
-				BEAE045A174E044A004D4226 /* FPActivityView.h */,
-				BEAE045B174E044A004D4226 /* FPActivityView.m */,
-			);
-			name = FPActivityView;
-			path = FPActivityView/FPActivityView;
-			sourceTree = "<group>";
-		};
 		BEAE045D174E0737004D4226 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +427,15 @@
 				BEAE045F174E0737004D4226 /* ActivityBar@2x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		BEAE0462174E17BE004D4226 /* TWActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE0463174E17BF004D4226 /* TWActivityView.h */,
+				BEAE0464174E17BF004D4226 /* TWActivityView.m */,
+			);
+			path = TWActivityView;
 			sourceTree = "<group>";
 		};
 		BEE95C9E174B6F9F004E470A /* TWChart */ = {
@@ -550,7 +549,7 @@
 		BEF6732B174B53D900CBB354 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				BEAE0459174E044A004D4226 /* FPActivityView */,
+				BEAE0462174E17BE004D4226 /* TWActivityView */,
 				BEE95C9E174B6F9F004E470A /* TWChart */,
 				BEA9E489174B5F08005EAC9E /* FlatUIKit */,
 				BEF673BB174B53E900CBB354 /* AFNetworking */,
@@ -762,7 +761,7 @@
 				BEA9E4D5174B5F08005EAC9E /* UITabBar+FlatUI.m in Sources */,
 				BEE95C82174B681B004E470A /* TWTwoteViewController.m in Sources */,
 				BEE95CA1174B6F9F004E470A /* TWChart.m in Sources */,
-				BEAE045C174E044A004D4226 /* FPActivityView.m in Sources */,
+				BEAE0465174E17BF004D4226 /* TWActivityView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
