@@ -68,6 +68,7 @@
     if(!_didAppear)
     {
         [self refresh:nil];
+        _didAppear = YES;
     }
 }
 
