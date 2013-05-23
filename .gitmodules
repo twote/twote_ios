@@ -4,3 +4,6 @@
 [submodule "Twote.io/Libs/FlatUIKit"]
 	path = Twote.io/Libs/FlatUIKit
 	url = https://github.com/Grouper/FlatUIKit
+[submodule "Twote.io/Libs/FPActivityView"]
+	path = Twote.io/Libs/FPActivityView
+	url = https://github.com/farhanpatel/FPActivityView

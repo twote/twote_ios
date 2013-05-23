@@ -54,10 +54,12 @@
 		BEA9E4F1174B5FAC005EAC9E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F0174B5FAC005EAC9E /* CoreText.framework */; };
 		BEA9E4F3174B5FB0005EAC9E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F2174B5FB0005EAC9E /* SystemConfiguration.framework */; };
 		BEA9E4F5174B5FB6005EAC9E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F4174B5FB6005EAC9E /* MobileCoreServices.framework */; };
+		BEAE045C174E044A004D4226 /* FPActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAE045B174E044A004D4226 /* FPActivityView.m */; };
+		BEAE0460174E0738004D4226 /* ActivityBar.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAE045E174E0737004D4226 /* ActivityBar.png */; };
+		BEAE0461174E0738004D4226 /* ActivityBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAE045F174E0737004D4226 /* ActivityBar@2x.png */; };
 		BEE95C82174B681B004E470A /* TWTwoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95C81174B681B004E470A /* TWTwoteViewController.m */; };
 		BEE95CA1174B6F9F004E470A /* TWChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95CA0174B6F9F004E470A /* TWChart.m */; };
 		BEE95CA3174B7295004E470A /* LeagueGothic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */; };
-		BEE95CA7174B76B3004E470A /* TWActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95CA6174B76B3004E470A /* TWActivityIndicator.m */; };
 		BEE95CA9174B76FD004E470A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE95CA8174B76FD004E470A /* QuartzCore.framework */; };
 		BEE95CAB174B8101004E470A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CAA174B8101004E470A /* Icon.png */; };
 		BEE95CAD174B8105004E470A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CAC174B8105004E470A /* Icon@2x.png */; };
@@ -175,13 +177,15 @@
 		BEA9E4F0174B5FAC005EAC9E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		BEA9E4F2174B5FB0005EAC9E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BEA9E4F4174B5FB6005EAC9E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BEAE045A174E044A004D4226 /* FPActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPActivityView.h; sourceTree = "<group>"; };
+		BEAE045B174E044A004D4226 /* FPActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPActivityView.m; sourceTree = "<group>"; };
+		BEAE045E174E0737004D4226 /* ActivityBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ActivityBar.png; sourceTree = "<group>"; };
+		BEAE045F174E0737004D4226 /* ActivityBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ActivityBar@2x.png"; sourceTree = "<group>"; };
 		BEE95C80174B681B004E470A /* TWTwoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTwoteViewController.h; sourceTree = "<group>"; };
 		BEE95C81174B681B004E470A /* TWTwoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTwoteViewController.m; sourceTree = "<group>"; };
 		BEE95C9F174B6F9F004E470A /* TWChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWChart.h; sourceTree = "<group>"; };
 		BEE95CA0174B6F9F004E470A /* TWChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWChart.m; sourceTree = "<group>"; };
 		BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeagueGothic-Regular.otf"; sourceTree = "<group>"; };
-		BEE95CA5174B76B3004E470A /* TWActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWActivityIndicator.h; sourceTree = "<group>"; };
-		BEE95CA6174B76B3004E470A /* TWActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWActivityIndicator.m; sourceTree = "<group>"; };
 		BEE95CA8174B76FD004E470A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BEE95CAA174B8101004E470A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		BEE95CAC174B8105004E470A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -416,6 +420,25 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		BEAE0459174E044A004D4226 /* FPActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE045A174E044A004D4226 /* FPActivityView.h */,
+				BEAE045B174E044A004D4226 /* FPActivityView.m */,
+			);
+			name = FPActivityView;
+			path = FPActivityView/FPActivityView;
+			sourceTree = "<group>";
+		};
+		BEAE045D174E0737004D4226 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE045E174E0737004D4226 /* ActivityBar.png */,
+				BEAE045F174E0737004D4226 /* ActivityBar@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		BEE95C9E174B6F9F004E470A /* TWChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,15 +446,6 @@
 				BEE95CA0174B6F9F004E470A /* TWChart.m */,
 			);
 			path = TWChart;
-			sourceTree = "<group>";
-		};
-		BEE95CA4174B76A5004E470A /* TWActivityIndicator */ = {
-			isa = PBXGroup;
-			children = (
-				BEE95CA5174B76B3004E470A /* TWActivityIndicator.h */,
-				BEE95CA6174B76B3004E470A /* TWActivityIndicator.m */,
-			);
-			path = TWActivityIndicator;
 			sourceTree = "<group>";
 		};
 		BEF672F6174B51B700CBB354 = {
@@ -474,6 +488,7 @@
 		BEF67308174B51B700CBB354 /* Twote.io */ = {
 			isa = PBXGroup;
 			children = (
+				BEAE045D174E0737004D4226 /* Images */,
 				BEF67325174B525400CBB354 /* Controller */,
 				BEF67326174B525400CBB354 /* Model */,
 				BEF67327174B525400CBB354 /* View */,
@@ -535,7 +550,7 @@
 		BEF6732B174B53D900CBB354 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				BEE95CA4174B76A5004E470A /* TWActivityIndicator */,
+				BEAE0459174E044A004D4226 /* FPActivityView */,
 				BEE95C9E174B6F9F004E470A /* TWChart */,
 				BEA9E489174B5F08005EAC9E /* FlatUIKit */,
 				BEF673BB174B53E900CBB354 /* AFNetworking */,
@@ -672,6 +687,8 @@
 				BE2FF72B174CA9190088B2B8 /* MainStoryboard.strings in Resources */,
 				BE2FF72E174CA9210088B2B8 /* InfoPlist.strings in Resources */,
 				BE2FF736174CA94A0088B2B8 /* Localizable.strings in Resources */,
+				BEAE0460174E0738004D4226 /* ActivityBar.png in Resources */,
+				BEAE0461174E0738004D4226 /* ActivityBar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,7 +762,7 @@
 				BEA9E4D5174B5F08005EAC9E /* UITabBar+FlatUI.m in Sources */,
 				BEE95C82174B681B004E470A /* TWTwoteViewController.m in Sources */,
 				BEE95CA1174B6F9F004E470A /* TWChart.m in Sources */,
-				BEE95CA7174B76B3004E470A /* TWActivityIndicator.m in Sources */,
+				BEAE045C174E044A004D4226 /* FPActivityView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
