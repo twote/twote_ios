@@ -59,7 +59,7 @@
 - (void) viewDidAppear:(BOOL)animated
 {
     // Retrive Twote details
-    FPActivityView* activityView = [[FPActivityView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 4) andActivityBar:[UIImage imageNamed:@"ActivityBar"]];
+    TWActivityView* activityView = [[TWActivityView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 4) andActivityBar:[UIImage imageNamed:@"ActivityBar"]];
     [activityView start];
     [self.view addSubview:activityView];
     
