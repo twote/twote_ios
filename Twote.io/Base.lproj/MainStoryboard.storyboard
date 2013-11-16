@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tE2-LT-gzb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tE2-LT-gzb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Recent View Controller - Twote.io-->
         <scene sceneID="RSm-XJ-g3w">
             <objects>
                 <tableViewController id="jld-2N-ske" customClass="TWRecentViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tre-2T-ufP">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tre-2T-ufP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="t4T-0S-Bfj" customClass="TWTwoteCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t4T-0S-Bfj" id="n2I-bT-Y3L">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="twote" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pfv-Ky-YaU">
+                                            <rect key="frame" x="20" y="12" width="176" height="21"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.90980392156862744" green="0.80784313725490198" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="x votes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="z8b-fA-ygc">
+                                            <rect key="frame" x="191" y="11" width="96" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="96" id="92d-tV-8f5"/>
                                             </constraints>
@@ -36,15 +39,14 @@
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="pfv-Ky-YaU" firstAttribute="leading" secondItem="t4T-0S-Bfj" secondAttribute="leading" constant="20" type="default" id="CbH-HC-m0N"/>
-                                    <constraint firstItem="z8b-fA-ygc" firstAttribute="leading" secondItem="pfv-Ky-YaU" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="GIB-Wk-8BK"/>
-                                    <constraint firstAttribute="trailing" secondItem="z8b-fA-ygc" secondAttribute="trailing" constant="20" type="default" id="ggi-H0-pdz"/>
-                                    <constraint firstItem="pfv-Ky-YaU" firstAttribute="centerY" secondItem="t4T-0S-Bfj" secondAttribute="centerY" type="default" id="kNg-m8-ggf"/>
-                                    <constraint firstItem="pfv-Ky-YaU" firstAttribute="baseline" secondItem="z8b-fA-ygc" secondAttribute="baseline" type="default" id="yp5-wk-Gs8"/>
+                                    <constraint firstItem="pfv-Ky-YaU" firstAttribute="leading" secondItem="t4T-0S-Bfj" secondAttribute="leading" constant="20" id="Joa-mz-by2"/>
+                                    <constraint firstItem="pfv-Ky-YaU" firstAttribute="centerY" secondItem="t4T-0S-Bfj" secondAttribute="centerY" id="QSQ-mB-hRP"/>
+                                    <constraint firstItem="pfv-Ky-YaU" firstAttribute="baseline" secondItem="z8b-fA-ygc" secondAttribute="baseline" constant="1" id="aUF-tb-eqq"/>
+                                    <constraint firstItem="z8b-fA-ygc" firstAttribute="leading" secondItem="pfv-Ky-YaU" secondAttribute="trailing" constant="-5" id="oOS-9Z-chg"/>
+                                    <constraint firstAttribute="trailing" secondItem="z8b-fA-ygc" secondAttribute="trailing" constant="33" id="z3P-9o-OzQ"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="twoteLabel" destination="pfv-Ky-YaU" id="8b0-tM-Vqz"/>
@@ -68,20 +70,25 @@
         <scene sceneID="utc-dY-Ju7">
             <objects>
                 <viewController id="2mk-La-2je" customClass="TWTwoteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Va-r3-ZC6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q7I-ue-Vxt"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9No-pv-L9b">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xww-t1-AxM" customClass="TWChart">
+                                <rect key="frame" x="0.0" y="40" width="320" height="528"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Xww-t1-AxM" firstAttribute="top" secondItem="9No-pv-L9b" secondAttribute="top" constant="40" id="4Op-Oa-QlS"/>
-                            <constraint firstItem="Xww-t1-AxM" firstAttribute="trailing" secondItem="9No-pv-L9b" secondAttribute="trailing" type="default" id="Htj-fw-GYZ"/>
-                            <constraint firstItem="Xww-t1-AxM" firstAttribute="leading" secondItem="9No-pv-L9b" secondAttribute="leading" type="default" id="Zm1-8f-TY2"/>
-                            <constraint firstItem="Xww-t1-AxM" firstAttribute="bottom" secondItem="9No-pv-L9b" secondAttribute="bottom" type="default" id="ffY-L1-fKT"/>
+                            <constraint firstItem="Xww-t1-AxM" firstAttribute="trailing" secondItem="9No-pv-L9b" secondAttribute="trailing" id="Htj-fw-GYZ"/>
+                            <constraint firstItem="Xww-t1-AxM" firstAttribute="leading" secondItem="9No-pv-L9b" secondAttribute="leading" id="Zm1-8f-TY2"/>
+                            <constraint firstItem="Xww-t1-AxM" firstAttribute="bottom" secondItem="9No-pv-L9b" secondAttribute="bottom" id="ffY-L1-fKT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="b1K-Fv-wN9"/>
