@@ -28,29 +28,6 @@
 		BE2FF72B174CA9190088B2B8 /* MainStoryboard.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE2FF729174CA9190088B2B8 /* MainStoryboard.strings */; };
 		BE2FF72E174CA9210088B2B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE2FF72C174CA9210088B2B8 /* InfoPlist.strings */; };
 		BE2FF736174CA94A0088B2B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE2FF734174CA94A0088B2B8 /* Localizable.strings */; };
-		BEA9E4C9174B5F08005EAC9E /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E48E174B5F08005EAC9E /* FUIAlertView.m */; };
-		BEA9E4CA174B5F08005EAC9E /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E490174B5F08005EAC9E /* FUIButton.m */; };
-		BEA9E4CB174B5F08005EAC9E /* FUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E492174B5F08005EAC9E /* FUISegmentedControl.m */; };
-		BEA9E4CC174B5F08005EAC9E /* FUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E494174B5F08005EAC9E /* FUISwitch.m */; };
-		BEA9E4CD174B5F08005EAC9E /* UIBarButtonItem+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E496174B5F08005EAC9E /* UIBarButtonItem+FlatUI.m */; };
-		BEA9E4CE174B5F08005EAC9E /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E498174B5F08005EAC9E /* UIColor+FlatUI.m */; };
-		BEA9E4CF174B5F08005EAC9E /* UIFont+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E49A174B5F08005EAC9E /* UIFont+FlatUI.m */; };
-		BEA9E4D0174B5F08005EAC9E /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E49C174B5F08005EAC9E /* UIImage+FlatUI.m */; };
-		BEA9E4D1174B5F08005EAC9E /* UINavigationBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E49E174B5F08005EAC9E /* UINavigationBar+FlatUI.m */; };
-		BEA9E4D2174B5F08005EAC9E /* UIProgressView+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E4A0174B5F08005EAC9E /* UIProgressView+FlatUI.m */; };
-		BEA9E4D3174B5F08005EAC9E /* UISlider+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E4A2174B5F08005EAC9E /* UISlider+FlatUI.m */; };
-		BEA9E4D4174B5F08005EAC9E /* UIStepper+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E4A4174B5F08005EAC9E /* UIStepper+FlatUI.m */; };
-		BEA9E4D5174B5F08005EAC9E /* UITabBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9E4A6174B5F08005EAC9E /* UITabBar+FlatUI.m */; };
-		BEA9E4E3174B5F08005EAC9E /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA9E4BE174B5F08005EAC9E /* Lato-Black.ttf */; };
-		BEA9E4E4174B5F08005EAC9E /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA9E4BF174B5F08005EAC9E /* Lato-BlackItalic.ttf */; };
-		BEA9E4E5174B5F08005EAC9E /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA9E4C0174B5F08005EAC9E /* Lato-Bold.ttf */; };
-		BEA9E4E6174B5F08005EAC9E /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA9E4C1174B5F08005EAC9E /* Lato-BoldItalic.ttf */; };
-		BEA9E4E7174B5F08005EAC9E /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA9E4C2174B5F08005EAC9E /* Lato-Hairline.ttf */; };
-		BEA9E4E8174B5F08005EAC9E /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA9E4C3174B5F08005EAC9E /* Lato-HairlineItalic.ttf */; };
-		BEA9E4E9174B5F08005EAC9E /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA9E4C4174B5F08005EAC9E /* Lato-Italic.ttf */; };
-		BEA9E4EA174B5F08005EAC9E /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA9E4C5174B5F08005EAC9E /* Lato-Light.ttf */; };
-		BEA9E4EB174B5F08005EAC9E /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA9E4C6174B5F08005EAC9E /* Lato-LightItalic.ttf */; };
-		BEA9E4EC174B5F08005EAC9E /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA9E4C7174B5F08005EAC9E /* Lato-Regular.ttf */; };
 		BEA9E4F1174B5FAC005EAC9E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F0174B5FAC005EAC9E /* CoreText.framework */; };
 		BEA9E4F3174B5FB0005EAC9E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F2174B5FB0005EAC9E /* SystemConfiguration.framework */; };
 		BEA9E4F5174B5FB6005EAC9E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9E4F4174B5FB6005EAC9E /* MobileCoreServices.framework */; };
@@ -59,7 +36,6 @@
 		BEAE0465174E17BF004D4226 /* TWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAE0464174E17BF004D4226 /* TWActivityView.m */; };
 		BEE95C82174B681B004E470A /* TWTwoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95C81174B681B004E470A /* TWTwoteViewController.m */; };
 		BEE95CA1174B6F9F004E470A /* TWChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE95CA0174B6F9F004E470A /* TWChart.m */; };
-		BEE95CA3174B7295004E470A /* LeagueGothic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */; };
 		BEE95CA9174B76FD004E470A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE95CA8174B76FD004E470A /* QuartzCore.framework */; };
 		BEE95CAB174B8101004E470A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CAA174B8101004E470A /* Icon.png */; };
 		BEE95CAD174B8105004E470A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE95CAC174B8105004E470A /* Icon@2x.png */; };
@@ -138,42 +114,6 @@
 		BE2FF733174CA9380088B2B8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
 		BE2FF735174CA94A0088B2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Twote.io/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		BE2FF73A174CA9810088B2B8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Twote.io/de.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
-		BEA9E48D174B5F08005EAC9E /* FUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIAlertView.h; sourceTree = "<group>"; };
-		BEA9E48E174B5F08005EAC9E /* FUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIAlertView.m; sourceTree = "<group>"; };
-		BEA9E48F174B5F08005EAC9E /* FUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIButton.h; sourceTree = "<group>"; };
-		BEA9E490174B5F08005EAC9E /* FUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIButton.m; sourceTree = "<group>"; };
-		BEA9E491174B5F08005EAC9E /* FUISegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUISegmentedControl.h; sourceTree = "<group>"; };
-		BEA9E492174B5F08005EAC9E /* FUISegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUISegmentedControl.m; sourceTree = "<group>"; };
-		BEA9E493174B5F08005EAC9E /* FUISwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUISwitch.h; sourceTree = "<group>"; };
-		BEA9E494174B5F08005EAC9E /* FUISwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUISwitch.m; sourceTree = "<group>"; };
-		BEA9E495174B5F08005EAC9E /* UIBarButtonItem+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FlatUI.h"; sourceTree = "<group>"; };
-		BEA9E496174B5F08005EAC9E /* UIBarButtonItem+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FlatUI.m"; sourceTree = "<group>"; };
-		BEA9E497174B5F08005EAC9E /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
-		BEA9E498174B5F08005EAC9E /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
-		BEA9E499174B5F08005EAC9E /* UIFont+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FlatUI.h"; sourceTree = "<group>"; };
-		BEA9E49A174B5F08005EAC9E /* UIFont+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FlatUI.m"; sourceTree = "<group>"; };
-		BEA9E49B174B5F08005EAC9E /* UIImage+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FlatUI.h"; sourceTree = "<group>"; };
-		BEA9E49C174B5F08005EAC9E /* UIImage+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FlatUI.m"; sourceTree = "<group>"; };
-		BEA9E49D174B5F08005EAC9E /* UINavigationBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+FlatUI.h"; sourceTree = "<group>"; };
-		BEA9E49E174B5F08005EAC9E /* UINavigationBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+FlatUI.m"; sourceTree = "<group>"; };
-		BEA9E49F174B5F08005EAC9E /* UIProgressView+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+FlatUI.h"; sourceTree = "<group>"; };
-		BEA9E4A0174B5F08005EAC9E /* UIProgressView+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+FlatUI.m"; sourceTree = "<group>"; };
-		BEA9E4A1174B5F08005EAC9E /* UISlider+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+FlatUI.h"; sourceTree = "<group>"; };
-		BEA9E4A2174B5F08005EAC9E /* UISlider+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+FlatUI.m"; sourceTree = "<group>"; };
-		BEA9E4A3174B5F08005EAC9E /* UIStepper+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStepper+FlatUI.h"; sourceTree = "<group>"; };
-		BEA9E4A4174B5F08005EAC9E /* UIStepper+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStepper+FlatUI.m"; sourceTree = "<group>"; };
-		BEA9E4A5174B5F08005EAC9E /* UITabBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+FlatUI.h"; sourceTree = "<group>"; };
-		BEA9E4A6174B5F08005EAC9E /* UITabBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+FlatUI.m"; sourceTree = "<group>"; };
-		BEA9E4BE174B5F08005EAC9E /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
-		BEA9E4BF174B5F08005EAC9E /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
-		BEA9E4C0174B5F08005EAC9E /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
-		BEA9E4C1174B5F08005EAC9E /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
-		BEA9E4C2174B5F08005EAC9E /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
-		BEA9E4C3174B5F08005EAC9E /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
-		BEA9E4C4174B5F08005EAC9E /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
-		BEA9E4C5174B5F08005EAC9E /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
-		BEA9E4C6174B5F08005EAC9E /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
-		BEA9E4C7174B5F08005EAC9E /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		BEA9E4F0174B5FAC005EAC9E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		BEA9E4F2174B5FB0005EAC9E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BEA9E4F4174B5FB6005EAC9E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -185,7 +125,6 @@
 		BEE95C81174B681B004E470A /* TWTwoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTwoteViewController.m; sourceTree = "<group>"; };
 		BEE95C9F174B6F9F004E470A /* TWChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWChart.h; sourceTree = "<group>"; };
 		BEE95CA0174B6F9F004E470A /* TWChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWChart.m; sourceTree = "<group>"; };
-		BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeagueGothic-Regular.otf"; sourceTree = "<group>"; };
 		BEE95CA8174B76FD004E470A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BEE95CAA174B8101004E470A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		BEE95CAC174B8105004E470A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -353,73 +292,6 @@
 			path = OCMock;
 			sourceTree = "<group>";
 		};
-		BEA9E489174B5F08005EAC9E /* FlatUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				BEA9E48B174B5F08005EAC9E /* Classes */,
-				BEA9E4BD174B5F08005EAC9E /* Resources */,
-			);
-			path = FlatUIKit;
-			sourceTree = "<group>";
-		};
-		BEA9E48B174B5F08005EAC9E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				BEA9E48C174B5F08005EAC9E /* ios */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		BEA9E48C174B5F08005EAC9E /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				BEA9E48D174B5F08005EAC9E /* FUIAlertView.h */,
-				BEA9E48E174B5F08005EAC9E /* FUIAlertView.m */,
-				BEA9E48F174B5F08005EAC9E /* FUIButton.h */,
-				BEA9E490174B5F08005EAC9E /* FUIButton.m */,
-				BEA9E491174B5F08005EAC9E /* FUISegmentedControl.h */,
-				BEA9E492174B5F08005EAC9E /* FUISegmentedControl.m */,
-				BEA9E493174B5F08005EAC9E /* FUISwitch.h */,
-				BEA9E494174B5F08005EAC9E /* FUISwitch.m */,
-				BEA9E495174B5F08005EAC9E /* UIBarButtonItem+FlatUI.h */,
-				BEA9E496174B5F08005EAC9E /* UIBarButtonItem+FlatUI.m */,
-				BEA9E497174B5F08005EAC9E /* UIColor+FlatUI.h */,
-				BEA9E498174B5F08005EAC9E /* UIColor+FlatUI.m */,
-				BEA9E499174B5F08005EAC9E /* UIFont+FlatUI.h */,
-				BEA9E49A174B5F08005EAC9E /* UIFont+FlatUI.m */,
-				BEA9E49B174B5F08005EAC9E /* UIImage+FlatUI.h */,
-				BEA9E49C174B5F08005EAC9E /* UIImage+FlatUI.m */,
-				BEA9E49D174B5F08005EAC9E /* UINavigationBar+FlatUI.h */,
-				BEA9E49E174B5F08005EAC9E /* UINavigationBar+FlatUI.m */,
-				BEA9E49F174B5F08005EAC9E /* UIProgressView+FlatUI.h */,
-				BEA9E4A0174B5F08005EAC9E /* UIProgressView+FlatUI.m */,
-				BEA9E4A1174B5F08005EAC9E /* UISlider+FlatUI.h */,
-				BEA9E4A2174B5F08005EAC9E /* UISlider+FlatUI.m */,
-				BEA9E4A3174B5F08005EAC9E /* UIStepper+FlatUI.h */,
-				BEA9E4A4174B5F08005EAC9E /* UIStepper+FlatUI.m */,
-				BEA9E4A5174B5F08005EAC9E /* UITabBar+FlatUI.h */,
-				BEA9E4A6174B5F08005EAC9E /* UITabBar+FlatUI.m */,
-			);
-			path = ios;
-			sourceTree = "<group>";
-		};
-		BEA9E4BD174B5F08005EAC9E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BEA9E4BE174B5F08005EAC9E /* Lato-Black.ttf */,
-				BEA9E4BF174B5F08005EAC9E /* Lato-BlackItalic.ttf */,
-				BEA9E4C0174B5F08005EAC9E /* Lato-Bold.ttf */,
-				BEA9E4C1174B5F08005EAC9E /* Lato-BoldItalic.ttf */,
-				BEA9E4C2174B5F08005EAC9E /* Lato-Hairline.ttf */,
-				BEA9E4C3174B5F08005EAC9E /* Lato-HairlineItalic.ttf */,
-				BEA9E4C4174B5F08005EAC9E /* Lato-Italic.ttf */,
-				BEA9E4C5174B5F08005EAC9E /* Lato-Light.ttf */,
-				BEA9E4C6174B5F08005EAC9E /* Lato-LightItalic.ttf */,
-				BEA9E4C7174B5F08005EAC9E /* Lato-Regular.ttf */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		BEAE045D174E0737004D4226 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,7 +375,6 @@
 				BE2FF734174CA94A0088B2B8 /* Localizable.strings */,
 				BE2FF729174CA9190088B2B8 /* MainStoryboard.strings */,
 				BE2FF72C174CA9210088B2B8 /* InfoPlist.strings */,
-				BEE95CA2174B7295004E470A /* LeagueGothic-Regular.otf */,
 				BEF6730A174B51B700CBB354 /* Twote.io-Info.plist */,
 				BEF6730E174B51B700CBB354 /* main.m */,
 				BEF67310174B51B700CBB354 /* Twote.io-Prefix.pch */,
@@ -551,7 +422,6 @@
 			children = (
 				BEAE0462174E17BE004D4226 /* TWActivityView */,
 				BEE95C9E174B6F9F004E470A /* TWChart */,
-				BEA9E489174B5F08005EAC9E /* FlatUIKit */,
 				BEF673BB174B53E900CBB354 /* AFNetworking */,
 			);
 			path = Libs;
@@ -669,17 +539,6 @@
 				BEF67315174B51B700CBB354 /* Default.png in Resources */,
 				BEF67317174B51B700CBB354 /* Default@2x.png in Resources */,
 				BEF67319174B51B700CBB354 /* Default-568h@2x.png in Resources */,
-				BEA9E4E3174B5F08005EAC9E /* Lato-Black.ttf in Resources */,
-				BEA9E4E4174B5F08005EAC9E /* Lato-BlackItalic.ttf in Resources */,
-				BEA9E4E5174B5F08005EAC9E /* Lato-Bold.ttf in Resources */,
-				BEA9E4E6174B5F08005EAC9E /* Lato-BoldItalic.ttf in Resources */,
-				BEA9E4E7174B5F08005EAC9E /* Lato-Hairline.ttf in Resources */,
-				BEA9E4E8174B5F08005EAC9E /* Lato-HairlineItalic.ttf in Resources */,
-				BEA9E4E9174B5F08005EAC9E /* Lato-Italic.ttf in Resources */,
-				BEA9E4EA174B5F08005EAC9E /* Lato-Light.ttf in Resources */,
-				BEA9E4EB174B5F08005EAC9E /* Lato-LightItalic.ttf in Resources */,
-				BEA9E4EC174B5F08005EAC9E /* Lato-Regular.ttf in Resources */,
-				BEE95CA3174B7295004E470A /* LeagueGothic-Regular.otf in Resources */,
 				BEE95CAB174B8101004E470A /* Icon.png in Resources */,
 				BEE95CAD174B8105004E470A /* Icon@2x.png in Resources */,
 				BE2FF728174CA9060088B2B8 /* MainStoryboard.storyboard in Resources */,
@@ -746,19 +605,6 @@
 				BEF673D7174B53E900CBB354 /* UIImageView+AFNetworking.m in Sources */,
 				BEF673DA174B543C00CBB354 /* TWDataController.m in Sources */,
 				BEF673DD174B598900CBB354 /* TWTwote.m in Sources */,
-				BEA9E4C9174B5F08005EAC9E /* FUIAlertView.m in Sources */,
-				BEA9E4CA174B5F08005EAC9E /* FUIButton.m in Sources */,
-				BEA9E4CB174B5F08005EAC9E /* FUISegmentedControl.m in Sources */,
-				BEA9E4CC174B5F08005EAC9E /* FUISwitch.m in Sources */,
-				BEA9E4CD174B5F08005EAC9E /* UIBarButtonItem+FlatUI.m in Sources */,
-				BEA9E4CE174B5F08005EAC9E /* UIColor+FlatUI.m in Sources */,
-				BEA9E4CF174B5F08005EAC9E /* UIFont+FlatUI.m in Sources */,
-				BEA9E4D0174B5F08005EAC9E /* UIImage+FlatUI.m in Sources */,
-				BEA9E4D1174B5F08005EAC9E /* UINavigationBar+FlatUI.m in Sources */,
-				BEA9E4D2174B5F08005EAC9E /* UIProgressView+FlatUI.m in Sources */,
-				BEA9E4D3174B5F08005EAC9E /* UISlider+FlatUI.m in Sources */,
-				BEA9E4D4174B5F08005EAC9E /* UIStepper+FlatUI.m in Sources */,
-				BEA9E4D5174B5F08005EAC9E /* UITabBar+FlatUI.m in Sources */,
 				BEE95C82174B681B004E470A /* TWTwoteViewController.m in Sources */,
 				BEE95CA1174B6F9F004E470A /* TWChart.m in Sources */,
 				BEAE0465174E17BF004D4226 /* TWActivityView.m in Sources */,
@@ -899,7 +745,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -923,7 +769,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

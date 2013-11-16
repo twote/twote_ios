@@ -47,7 +47,6 @@
     if(rectWidth > 60)
         rectWidth = 60;
     
-    CGContextRef context = UIGraphicsGetCurrentContext();
     float LBL_HEIGHT = 20.0f, iLen, x, heightRatio, height, y;
     UIColor *iColor ;
     
@@ -66,15 +65,13 @@
         UILabel *lblRef = [[UILabel alloc] initWithFrame:CGRectMake(barCount + x, rect.size.height - LBL_HEIGHT, rectWidth, LBL_HEIGHT)];
         lblRef.text = [[refs objectAtIndex:barCount] uppercaseString];
         lblRef.adjustsFontSizeToFitWidth = TRUE;
-        lblRef.adjustsLetterSpacingToFitWidth = TRUE;
         lblRef.textColor = self.color;
         [lblRef setTextAlignment:NSTextAlignmentCenter];
         lblRef.backgroundColor = [UIColor clearColor];
-        lblRef.font = [UIFont fontWithName:@"LeagueGothic-Regular" size:18.0f];
         [self addSubview:lblRef];
         
         /// Set color and draw the bar
-        iColor = [UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000];
+        iColor = self.color;
         int maxHeight = 20;
 
         CGRect barRect = CGRectMake(barCount + x, y + maxHeight, rectWidth, height - maxHeight);
@@ -96,14 +93,7 @@
     pivotLabel.text = [NSString stringWithFormat:@"%d", (int)self.maxLen];
     pivotLabel.backgroundColor = [UIColor clearColor];
     pivotLabel.textColor = self.color;
-    pivotLabel.font = [UIFont fontWithName:@"LeagueGothic-Regular" size:18.0f];
     [self addSubview:pivotLabel];
-    
-    /// A line
-    frame = rect;
-    frame.size.height = 1.0;
-    CGContextSetFillColorWithColor(context, self.color.CGColor);
-    CGContextFillRect(context, frame);
 }
 
 #pragma mark - Delegate Methods

@@ -8,8 +8,6 @@
 
 #import "TWTwoteViewController.h"
 
-#import "UIBarButtonItem+FlatUI.h"
-
 @interface TWTwoteViewController () <TWChartDelegate>
 {
     IBOutlet TWChart *_barChart;
@@ -39,21 +37,6 @@
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    // Configure NavigationBar
-    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor colorWithWhite:0.196 alpha:1.000]];
-    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]
-                                  highlightedColor:[UIColor yellowColor]
-                                      cornerRadius:3];
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
-    [titleLabel setBackgroundColor:[UIColor clearColor]];
-    [titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [titleLabel setFont:[UIFont fontWithName:@"LeagueGothic-Regular" size:26.0f]];
-    [titleLabel setTextColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]];
-    [titleLabel setText:[_twote.twote uppercaseString]];
-    [self.navigationItem setTitleView:titleLabel];
-    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:
-     [NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], UITextAttributeTextColor,nil]
-                                                                                            forState:UIControlStateNormal];
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -61,14 +44,14 @@
     // Retrive Twote details
     TWActivityView* activityView = [[TWActivityView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 4) andActivityBar:[UIImage imageNamed:@"ActivityBar"]];
     [activityView start];
-    [self.view addSubview:activityView];
+    [_barChart addSubview:activityView];
     
     [[TWDataController sharedInstance] twoteWithName:_twote.twote
                                        andCompletion:^(BOOL success, TWTwote *twote) {
                                            if(success)
                                            {
                                                _twote = twote;
-                                               _barChart.color = [UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000];
+                                               _barChart.color = [UIColor colorWithRed:192.0/255.0 green:169.0/255.0 blue:43.0/255.0 alpha:1.0];
                                                _barChart.delegate = self;
                                                
                                                NSMutableArray *aRefs = [[NSMutableArray alloc] init];
@@ -82,7 +65,7 @@
                                                }
                                                _barChart.refs = aRefs;
                                                _barChart.vals = aVals;
-                                               _barChart.backgroundColor = [UIColor clearColor];
+                                               _barChart.backgroundColor = [UIColor whiteColor];
                                                [_barChart setNeedsDisplay];
                                                
                                                double delayInSeconds = .5f;
@@ -106,8 +89,8 @@
 {
     if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
-         SLComposeViewController *socialComposeVc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        SLComposeViewControllerCompletionHandler completionHandler=
+        SLComposeViewController *socialComposeVc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        SLComposeViewControllerCompletionHandler completionHandler =
         ^(SLComposeViewControllerResult result){
             
             [socialComposeVc dismissViewControllerAnimated:YES completion:nil];

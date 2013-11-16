@@ -10,17 +10,6 @@
 
 #import "TWTwoteViewController.h"
 
-@interface TWTwoteCell ()
-
-@end
-
-@implementation TWTwoteCell
-
-@synthesize twoteLabel;
-@synthesize votesLabel;
-
-@end
-
 @interface TWRecentViewController ()
 {
     NSArray *_aTwotes;
@@ -42,23 +31,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.refreshControl addTarget:self
-                            action:@selector(refresh:)
-                  forControlEvents:UIControlEventValueChanged];
+    [self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    // Configure NavigationBar
-    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor colorWithWhite:0.196 alpha:1.000]];
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
-    [titleLabel setBackgroundColor:[UIColor clearColor]];
-    [titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [titleLabel setFont:[UIFont fontWithName:@"LeagueGothic-Regular" size:26.0f]];
-    [titleLabel setTextColor:[UIColor colorWithRed:0.910 green:0.808 blue:0.247 alpha:1.000]];
-    [titleLabel setText:@"TWOTE.IO"];
-    [self.navigationItem setTitleView:titleLabel];
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -118,57 +96,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    TWTwoteCell *cell = (TWTwoteCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 
     TWTwote *twote = (TWTwote *)[_aTwotes objectAtIndex:indexPath.row];
     
-    cell.twoteLabel.text = [twote.twote uppercaseString];
-    cell.twoteLabel.font = [UIFont fontWithName:@"LeagueGothic-Regular" size:18.0f];
-    
-    cell.votesLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%1$d votes", @"%1$d votes"), [twote.overallVotes intValue]];
-    cell.votesLabel.font = [UIFont fontWithName:@"LeagueGothic-Regular" size:18.0f];
+    cell.textLabel.text = [twote.twote uppercaseString];
+    cell.detailTextLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%1$d votes", @"%1$d votes"), [twote.overallVotes intValue]];
     
     return cell;
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 

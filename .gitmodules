@@ -1,6 +1,3 @@
 [submodule "Twote.io/Libs/AFNetworking"]
 	path = Twote.io/Libs/AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
-[submodule "Twote.io/Libs/FlatUIKit"]
-	path = Twote.io/Libs/FlatUIKit
-	url = https://github.com/Grouper/FlatUIKit

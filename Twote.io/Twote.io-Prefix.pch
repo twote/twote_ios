@@ -15,6 +15,5 @@
     #import <MobileCoreServices/MobileCoreServices.h>
 
     #import "AFNetworking.h"
-    #import "UINavigationBar+FlatUI.h"
     #import "TWActivityView.h"
 #endif
